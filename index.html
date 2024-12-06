@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                primary: '#B4F461',
               }
             }
           }
@@ -28,7 +29,21 @@
 </head>
 <body>
     <header>
+      <section class="navber flex xl:flex-row justify-between items-center bg-orange-50 p-8">
+        <div class="mr-20">
+          <button><a class="my-5 text-sm bg-primary font-bold px-5 py-3 rounded-xl">Blog</a></button>
+        </div>
 
+        <div class="flex xl:flex-row lg:flex flex-row justify-center items-center gap-2">
+          <img src="./assets/logo.png" alt="">
+          <h2 class="font-semibold text-base">Donation Bangladesh</h2>
+        </div>
+
+        <div class="flex lg:flex flex-row justify-center items-center gap-2">
+          <img src="./assets/coin.png" alt="">
+          <h2>2000 BDT</h2>
+        </div>
+      </section>
     </header>
     <main>
 
