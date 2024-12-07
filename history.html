@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation For Bangladesh</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/577fc8c0d9.js" crossorigin="anonymous"></script>
+    <!-- Customized Tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary: '#B4F461',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+        .font-lexend {
+        font-family: "Lexend", serif;
+      }
+      </style> 
+</head>
+<body>
+    <header>
+        <section class="navber flex xl:flex-row justify-between items-center bg-orange-50 p-8">
+          <div class="mr-20">
+            <button><a class="text-sm bg-primary font-bold px-5 py-2 rounded-lg">Blog</a></button>
+          </div>
+  
+          <div class="flex xl:flex-row lg:flex flex-row justify-center items-center gap-2">
+            <img src="./assets/logo.png" alt="">
+            <h2 class="font-semibold text-base">Donation Bangladesh</h2>
+          </div>
+  
+          <div class="flex lg:flex flex-row justify-center items-center gap-2">
+            <img src="./assets/coin.png" alt="">
+            <h2>2000 BDT</h2>
+          </div>
+        </section>
+  
+        <section class="baneer mt-16 mb-5">
+          <div class="flex justify-center">
+            <div class="mr-20">
+              <button class="text-sm bg-primary font-bold px-5 py-2 rounded-lg">Donation</button>
+            </div>
+  
+            <div class="mr-20">
+              <button id="btn-history"><a class="text-sm border font-bold px-5 py-2 rounded-lg">History</a></button>
+            </div>
+          </div>
+  
+        </section>
+      </header>
+</body>
+</html>
