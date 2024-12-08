@@ -40,10 +40,18 @@ document.getElementById('btn-donate-money2').addEventListener('click',function(e
     const donate = donateMoneyNumber + inputMoneyNumber;
     document.getElementById('donate2').innerText = donate;
 
+    if(donate >= 100){
+        alert(`You donated ${donate} tk successfully.`)
+    }
+
     const accountBalance = document.getElementById('account-balance').innerText;
     const accountBalanceNumber = parseFloat(accountBalance)
     const totalBalance = accountBalanceNumber - donate;
     document.getElementById('account-balance').innerText = totalBalance;
+
+    const p = document.createElement('p');
+    p.innerText = `${donate} Taka is Donated for Flood Relief in Feni,Bangladesh`;
+    document.getElementById('history-container').appendChild(p)
 })
 
 // Card 3
@@ -56,8 +64,16 @@ document.getElementById('btn-donate-money3').addEventListener('click',function(e
     const donate = donateMoneyNumber + inputMoneyNumber;
     document.getElementById('donate3').innerText = donate;
 
+    if(donate >= 100){
+        alert(`You donated ${donate} tk successfully.`)
+    }
+
     const accountBalance = document.getElementById('account-balance').innerText;
     const accountBalanceNumber = parseFloat(accountBalance)
     const totalBalance = accountBalanceNumber - donate;
     document.getElementById('account-balance').innerText = totalBalance;
+
+    const p = document.createElement('p');
+    p.innerText = `${donate} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
+    document.getElementById('history-container').appendChild(p)
 })
