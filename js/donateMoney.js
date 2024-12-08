@@ -16,6 +16,10 @@ document.getElementById('btn-donate-money').addEventListener('click',function(ev
     const donate = donateMoneyNumber + inputMoneyNumber;
     document.getElementById('donate').innerText = donate;
 
+    if(donate >= 100){
+        alert(`You donated ${donate} tk successfully.`)
+    }
+
     const accountBalance = document.getElementById('account-balance').innerText;
     const accountBalanceNumber = parseFloat(accountBalance)
     const totalBalance = accountBalanceNumber - donate;
